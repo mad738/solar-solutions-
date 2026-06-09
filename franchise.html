@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise Opportunity - Duplicate Name Solar Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header { background: linear-gradient(135deg, #1e3a8a, #065f46); color: white; padding: 10rem 0 5rem; text-align: center; }
+        .page-title { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; }
+        
+        .franchise-section { padding: 5rem 0; }
+        .benefits-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3rem; }
+        @media (min-width: 768px) { .benefits-grid { grid-template-columns: repeat(3, 1fr); } }
+        
+        .benefit-card { background: white; padding: 2.5rem 2rem; border-radius: 1rem; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .benefit-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+        .benefit-icon { width: 4rem; height: 4rem; background: linear-gradient(135deg, #facc15, #f97316); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+        .benefit-card h3 { font-size: 1.25rem; margin-bottom: 1rem; }
+        
+        .form-section { background: var(--bg-light); padding: 5rem 0; border-top: 1px solid rgba(0,0,0,0.05); }
+        .form-container { max-width: 600px; margin: 0 auto; background: white; padding: 3rem; border-radius: 1.5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.05); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+        .form-control { width: 100%; padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-family: inherit; font-size: 1rem; transition: border-color 0.3s; }
+        .form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-icon"><div class="logo-placeholder"></div></div>
+                <div class="logo-text"><h1>Duplicate Name Solar Solutions</h1><p>Infinite Energy, Infinite Possibilities</p></div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="franchise.html" class="active">Franchise</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm"><i data-lucide="phone" class="icon-sm"></i> Call Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <div class="container fade-up">
+                <h1 class="page-title">Become a Franchise Partner</h1>
+                <p class="text-xl opacity-90">Join the green energy revolution and build a profitable business</p>
+            </div>
+        </div>
+
+        <section class="franchise-section container">
+            <div class="text-center fade-up" style="max-width: 800px; margin: 0 auto;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Why Partner With Duplicate Name Solar Solutions?</h2>
+                <p style="font-size: 1.125rem; color: var(--text-light);">We are India's fastest-growing solar EPC company. By partnering with us, you gain access to our premium products, 25-year warranty promise, and proven business model.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card fade-up">
+                    <div class="benefit-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>High ROI</h3>
+                    <p>Start a highly profitable business in the booming renewable energy sector with excellent profit margins.</p>
+                </div>
+                <div class="benefit-card fade-up delay-1">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);"><i data-lucide="shield-check"></i></div>
+                    <h3>Brand Trust</h3>
+                    <p>Leverage the reputation of an MNRE-approved company with over 5000+ happy customers across India.</p>
+                </div>
+                <div class="benefit-card fade-up delay-2">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #4ade80, #10b981);"><i data-lucide="book-open"></i></div>
+                    <h3>Full Training</h3>
+                    <p>We provide complete technical, marketing, and sales training to ensure your success from day one.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <div class="form-container fade-up">
+                    <div class="text-center mb-4">
+                        <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Apply for Franchise</h2>
+                        <p style="color: var(--text-light);">Fill out the form below and our team will get in touch with you.</p>
+                    </div>
+                    <form id="franchise-form">
+                        <div class="form-group">
+                            <label class="form-label" for="fname">Full Name</label>
+                            <input type="text" id="fname" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="fphone">Phone Number</label>
+                            <input type="tel" id="fphone" class="form-control" required placeholder="+91 90000 00000">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="femail">Email Address</label>
+                            <input type="email" id="femail" class="form-control" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="city">City / State</label>
+                            <input type="text" id="city" class="form-control" required placeholder="New Delhi, Delhi">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Application</button>
+                        <div id="form-success" style="display: none; margin-top: 1rem; color: var(--primary); font-weight: 600; text-align: center;">
+                            Application received! Our franchise team will contact you shortly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer Content (Same as index) -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-link mb-4">
+                        <div class="logo-icon"><div class="logo-placeholder"></div></div>
+                        <div class="logo-text" style="color: white;"><h1 style="color: white;">Duplicate Name Solar Solutions</h1></div>
+                    </div>
+                    <p>India's leading solar EPC company providing residential, commercial, and industrial solar solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i data-lucide="map-pin"></i> Andhra Pradesh (AP), India</li>
+                        <li><i data-lucide="phone"></i> +91 9403892341</li>
+                        <li><i data-lucide="mail"></i> admin@infinitesolar.in</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Duplicate Name Solar Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('franchise-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.querySelector('button').textContent = 'Submitting...';
+            setTimeout(() => {
+                this.reset();
+                this.querySelector('button').textContent = 'Submit Application';
+                document.getElementById('form-success').style.display = 'block';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
